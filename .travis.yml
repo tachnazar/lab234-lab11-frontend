@@ -12,11 +12,11 @@ install:
 - npm install
 - npm run ng-deploy
 - ls -l
-script: 
 - docker build -t $DOCKER_USERNAME/lab234-lab11-frontend .
 - docker push $DOCKER_USERNAME/lab234-lab11-frontend
+script:
+- docker-compose -H "DOCKER_HOST" up -d  
 
 service: docker
-env:
-  global:
+
  
