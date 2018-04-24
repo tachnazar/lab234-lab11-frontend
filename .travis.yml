@@ -15,7 +15,7 @@ install:
 - docker build -t $DOCKER_USERNAME/lab234-lab11-frontend .
 - docker push $DOCKER_USERNAME/lab234-lab11-frontend
 script:
-- docker-compose -H "DOCKER_HOST" up -d  
+- docker-compose -H "$DOCKER_HOST" up -d  
 
 service: docker
 
