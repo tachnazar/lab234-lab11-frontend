@@ -13,8 +13,8 @@ install:
 - npm run ng-deploy
 - ls -l
 script: 
-- docker build -t $DOCKER_USERNAME/se234-lab10-client .
-- docker push $DOCKER_USERNAME/se234-lab10-client
+- docker build -t $DOCKER_USERNAME/lab234-lab11-frontend .
+- docker push $DOCKER_USERNAME/lab234-lab11-frontend
 
 service: docker
 env:
