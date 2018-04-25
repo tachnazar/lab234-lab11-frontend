@@ -4,9 +4,9 @@ services:
     image: dto80/234-lab11:latest
     ports:
       - "8085:8080"
-  volumes:
-    - type: bind
-      source: ./xxx
-      target: /data
+    volumes:
+      - type: bind
+        source: ./xxx
+        target: /data
   
 
