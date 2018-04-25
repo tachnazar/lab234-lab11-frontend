@@ -4,9 +4,9 @@ services:
     image: dto80/234-lab11:latest
     ports:
       - "8085:8080"
-  frontend:
-    image: 592115514/lab234-lab11-frontend:latest
-    ports:
-      - "8087:80"
+  volumes:
+    - type: bind
+      source: ./xxx
+      target: /data
   
 
