@@ -6,7 +6,10 @@ services:
       - "8085:8080"
     volumes:
       - type: bind
-        source: ./xxx
+        source: ./data
         target: /data
-  
+  frontend:
+    image: 592115514/lab234-lab11-frontend
+    ports:
+      - "8087:80"
 
